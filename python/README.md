@@ -1,14 +1,3 @@
-# bayesm - Python Implementation
-
-Bayesian Inference for Marketing/Micro-Econometrics
-
-Python port of the R bayesm package by Peter Rossi et al.
-
-## Installation
-
-```bash
-pip install -e .
-```
 
 ## Structure
 
