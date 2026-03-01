@@ -1,0 +1,73 @@
+2026-02-28 09:51:49,235 - INFO - ============================================================
+2026-02-28 09:51:49,235 - INFO - MNP Test Suite - 2026-02-28T09:51:49.235510
+2026-02-28 09:51:49,235 - INFO - ============================================================
+2026-02-28 09:51:49,782 - ERROR - FAILED: mnp_prob - No module named '_bayesm_cpp'
+2026-02-28 09:51:49,782 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 141, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 29, in test_mnp_prob
+    from bayesm.mnp_prob import mnp_prob
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/__init__.py", line 17, in <module>
+    from .mnp_prob import mnp_prob
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/mnp_prob.py", line 8, in <module>
+    import _bayesm_cpp as cpp
+ModuleNotFoundError: No module named '_bayesm_cpp'
+
+2026-02-28 09:51:49,783 - ERROR - FAILED: llmnp - No module named '_bayesm_cpp'
+2026-02-28 09:51:49,783 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 141, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 61, in test_llmnp
+    from bayesm.llmnp import llmnp
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/__init__.py", line 17, in <module>
+    from .mnp_prob import mnp_prob
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/mnp_prob.py", line 8, in <module>
+    import _bayesm_cpp as cpp
+ModuleNotFoundError: No module named '_bayesm_cpp'
+
+2026-02-28 09:51:49,783 - ERROR - FAILED: llmnp_gradient - No module named '_bayesm_cpp'
+2026-02-28 09:51:49,783 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 141, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_mnp.py", line 93, in test_llmnp_gradient_check
+    from bayesm.llmnp import llmnp
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/__init__.py", line 17, in <module>
+    from .mnp_prob import mnp_prob
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/mnp_prob.py", line 8, in <module>
+    import _bayesm_cpp as cpp
+ModuleNotFoundError: No module named '_bayesm_cpp'
+
+2026-02-28 09:51:49,784 - INFO - ============================================================
+2026-02-28 09:51:49,784 - INFO - MNP Tests: 0/3 passed
+2026-02-28 09:51:49,784 - INFO -   mnp_prob: FAIL
+2026-02-28 09:51:49,784 - INFO -   llmnp: FAIL
+2026-02-28 09:51:49,784 - INFO -   llmnp_gradient: FAIL
+2026-02-28 09:52:02,761 - INFO - ============================================================
+2026-02-28 09:52:02,761 - INFO - MNP Test Suite - 2026-02-28T09:52:02.761432
+2026-02-28 09:52:02,761 - INFO - ============================================================
+2026-02-28 09:52:03,324 - INFO - Testing mnp_prob
+2026-02-28 09:52:03,324 - INFO -   beta: [ 0.5 -0.3]
+2026-02-28 09:52:03,325 - INFO -   Sigma:
+[[1.  0.3]
+ [0.3 1. ]]
+2026-02-28 09:52:03,325 - INFO -   X:
+[[ 0.49671415 -0.1382643 ]
+ [ 0.64768854  1.52302986]]
+2026-02-28 09:52:03,325 - INFO -   Probabilities: [0.4121568  0.15657276 0.43127044]
+2026-02-28 09:52:03,325 - INFO -   Sum of probabilities: 1.000000
+2026-02-28 09:52:03,325 - INFO -   PASSED: mnp_prob
+2026-02-28 09:52:03,325 - INFO - Testing llmnp
+2026-02-28 09:52:03,326 - INFO -   n=20, p=3, k=2
+2026-02-28 09:52:03,326 - INFO -   beta: [ 0.5 -0.3]
+2026-02-28 09:52:03,326 - INFO -   y distribution: [7 6 7]
+2026-02-28 09:52:03,326 - INFO -   Log-likelihood: -29.4351
+2026-02-28 09:52:03,326 - INFO -   PASSED: llmnp
+2026-02-28 09:52:03,326 - INFO - Testing llmnp gradient (numerical)
+2026-02-28 09:52:03,337 - INFO -   Numerical gradient: [-21.74447444  21.46615564]
+2026-02-28 09:52:03,338 - INFO -   (Gradient magnitude: 30.5552)
+2026-02-28 09:52:03,338 - INFO -   PASSED: llmnp gradient check
+2026-02-28 09:52:03,338 - INFO - ============================================================
+2026-02-28 09:52:03,338 - INFO - MNP Tests: 3/3 passed
+2026-02-28 09:52:03,338 - INFO -   mnp_prob: PASS
+2026-02-28 09:52:03,338 - INFO -   llmnp: PASS
+2026-02-28 09:52:03,338 - INFO -   llmnp_gradient: PASS

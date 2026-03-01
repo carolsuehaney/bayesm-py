@@ -1,0 +1,26 @@
+2026-02-28 13:48:50,679 - INFO - ============================================================
+2026-02-28 13:48:50,680 - INFO - rivGibbs Test Suite - 2026-02-28T13:48:50.680015
+2026-02-28 13:48:50,680 - INFO - ============================================================
+2026-02-28 13:48:50,680 - INFO - Testing rivGibbs_basic
+2026-02-28 13:48:50,937 - INFO - deltadraw shape: (1000, 2)
+2026-02-28 13:48:50,937 - INFO - betadraw shape: (1000,)
+2026-02-28 13:48:50,937 - INFO - gammadraw shape: (1000, 1)
+2026-02-28 13:48:50,937 - INFO - Sigmadraw shape: (1000, 4)
+2026-02-28 13:48:50,937 - INFO - PASSED: rivGibbs_basic
+2026-02-28 13:48:50,937 - INFO - Testing rivGibbs_posterior
+2026-02-28 13:48:51,550 - INFO - True delta: [1.  0.5]
+2026-02-28 13:48:51,550 - INFO - Posterior mean delta: [0.96125853 0.4916529 ]
+2026-02-28 13:48:51,550 - INFO - True beta: 2.0
+2026-02-28 13:48:51,551 - INFO - Posterior mean beta: 2.222
+2026-02-28 13:48:51,551 - INFO - True gamma: [-0.5]
+2026-02-28 13:48:51,551 - INFO - Posterior mean gamma: [-0.45675027]
+2026-02-28 13:48:51,551 - INFO - PASSED: rivGibbs_posterior
+2026-02-28 13:48:51,551 - INFO - Testing rivGibbs_thinning
+2026-02-28 13:48:51,783 - INFO - R=1000, keep=10 -> expected 100 draws
+2026-02-28 13:48:51,783 - INFO - deltadraw shape: (100, 2)
+2026-02-28 13:48:51,783 - INFO - PASSED: rivGibbs_thinning
+2026-02-28 13:48:51,783 - INFO - ============================================================
+2026-02-28 13:48:51,783 - INFO - rivGibbs Tests: 3/3 passed
+2026-02-28 13:48:51,783 - INFO -   rivGibbs_basic: PASS
+2026-02-28 13:48:51,783 - INFO -   rivGibbs_posterior: PASS
+2026-02-28 13:48:51,783 - INFO -   rivGibbs_thinning: PASS

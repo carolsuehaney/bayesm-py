@@ -1,0 +1,41 @@
+2026-02-28 10:21:03,356 - INFO - ============================================================
+2026-02-28 10:21:03,356 - INFO - rbprobitGibbs Test Suite - 2026-02-28T10:21:03.356729
+2026-02-28 10:21:03,356 - INFO - ============================================================
+2026-02-28 10:21:03,356 - INFO - Testing rbprobitGibbs_basic
+2026-02-28 10:21:03,357 - ERROR - FAILED: rbprobitGibbs_basic - module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+2026-02-28 10:21:03,357 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 117, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 42, in test_rbprobitGibbs_basic
+    result = rbprobitGibbs(Data, Prior, Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rbprobitGibbs.py", line 112, in rbprobitGibbs
+    betadraw = cpp.rbprobitGibbs_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+
+2026-02-28 10:21:03,357 - INFO - Testing rbprobitGibbs_posterior
+2026-02-28 10:21:03,357 - ERROR - FAILED: rbprobitGibbs_posterior - module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+2026-02-28 10:21:03,357 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 117, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 66, in test_rbprobitGibbs_posterior
+    result = rbprobitGibbs(Data, Mcmc=Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rbprobitGibbs.py", line 112, in rbprobitGibbs
+    betadraw = cpp.rbprobitGibbs_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+
+2026-02-28 10:21:03,357 - INFO - Testing rbprobitGibbs_thinning
+2026-02-28 10:21:03,357 - ERROR - FAILED: rbprobitGibbs_thinning - module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+2026-02-28 10:21:03,357 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 117, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rbprobitGibbs.py", line 92, in test_rbprobitGibbs_thinning
+    result = rbprobitGibbs(Data, Mcmc=Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rbprobitGibbs.py", line 112, in rbprobitGibbs
+    betadraw = cpp.rbprobitGibbs_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rbprobitGibbs_rcpp_loop'
+
+2026-02-28 10:21:03,357 - INFO - ============================================================
+2026-02-28 10:21:03,357 - INFO - rbprobitGibbs Tests: 0/3 passed
+2026-02-28 10:21:03,357 - INFO -   rbprobitGibbs_basic: FAIL
+2026-02-28 10:21:03,357 - INFO -   rbprobitGibbs_posterior: FAIL
+2026-02-28 10:21:03,357 - INFO -   rbprobitGibbs_thinning: FAIL

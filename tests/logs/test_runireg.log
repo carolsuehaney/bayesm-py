@@ -1,0 +1,51 @@
+2026-02-28 10:01:02,214 - INFO - ============================================================
+2026-02-28 10:01:02,214 - INFO - runireg Test Suite - 2026-02-28T10:01:02.214529
+2026-02-28 10:01:02,214 - INFO - ============================================================
+2026-02-28 10:01:02,878 - INFO - Testing runireg basic functionality
+2026-02-28 10:01:02,931 - INFO -   betadraw shape: (1000, 3)
+2026-02-28 10:01:02,931 - INFO -   sigmasqdraw shape: (1000,)
+2026-02-28 10:01:02,931 - INFO -   PASSED: runireg basic
+2026-02-28 10:01:02,931 - INFO - Testing runireg posterior mean
+2026-02-28 10:01:03,193 - INFO -   True beta: [ 2. -1.]
+2026-02-28 10:01:03,193 - INFO -   Posterior mean beta: [0.69219976 0.31409996]
+2026-02-28 10:01:03,193 - INFO -   True sigmasq: 1.0
+2026-02-28 10:01:03,193 - INFO -   Posterior mean sigmasq: 4.6361
+2026-02-28 10:01:03,193 - ERROR - FAILED: runireg_posterior_mean - Beta mean too far from truth
+2026-02-28 10:01:03,193 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_runireg.py", line 131, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_runireg.py", line 84, in test_runireg_posterior_mean
+    assert np.allclose(beta_mean, beta_true, atol=0.3), f"Beta mean too far from truth"
+AssertionError: Beta mean too far from truth
+
+2026-02-28 10:01:03,193 - INFO - Testing runireg thinning
+2026-02-28 10:01:03,244 - INFO -   R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:01:03,244 - INFO -   betadraw shape: (100, 2)
+2026-02-28 10:01:03,245 - INFO -   PASSED: runireg thinning
+2026-02-28 10:01:03,245 - INFO - ============================================================
+2026-02-28 10:01:03,245 - INFO - runireg Tests: 2/3 passed
+2026-02-28 10:01:03,245 - INFO -   runireg_basic: PASS
+2026-02-28 10:01:03,245 - INFO -   runireg_posterior_mean: FAIL
+2026-02-28 10:01:03,245 - INFO -   runireg_thinning: PASS
+2026-02-28 10:02:41,850 - INFO - ============================================================
+2026-02-28 10:02:41,853 - INFO - runireg Test Suite - 2026-02-28T10:02:41.853502
+2026-02-28 10:02:41,853 - INFO - ============================================================
+2026-02-28 10:02:42,494 - INFO - Testing runireg basic functionality
+2026-02-28 10:02:42,548 - INFO -   betadraw shape: (1000, 3)
+2026-02-28 10:02:42,548 - INFO -   sigmasqdraw shape: (1000,)
+2026-02-28 10:02:42,548 - INFO -   PASSED: runireg basic
+2026-02-28 10:02:42,548 - INFO - Testing runireg posterior mean
+2026-02-28 10:02:42,805 - INFO -   True beta: [ 2. -1.]
+2026-02-28 10:02:42,805 - INFO -   Posterior mean beta: [ 1.88378288 -0.9945537 ]
+2026-02-28 10:02:42,805 - INFO -   True sigmasq: 1.0
+2026-02-28 10:02:42,805 - INFO -   Posterior mean sigmasq: 0.8848
+2026-02-28 10:02:42,805 - INFO -   PASSED: runireg posterior mean
+2026-02-28 10:02:42,805 - INFO - Testing runireg thinning
+2026-02-28 10:02:42,856 - INFO -   R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:02:42,856 - INFO -   betadraw shape: (100, 2)
+2026-02-28 10:02:42,856 - INFO -   PASSED: runireg thinning
+2026-02-28 10:02:42,856 - INFO - ============================================================
+2026-02-28 10:02:42,856 - INFO - runireg Tests: 3/3 passed
+2026-02-28 10:02:42,856 - INFO -   runireg_basic: PASS
+2026-02-28 10:02:42,856 - INFO -   runireg_posterior_mean: PASS
+2026-02-28 10:02:42,856 - INFO -   runireg_thinning: PASS

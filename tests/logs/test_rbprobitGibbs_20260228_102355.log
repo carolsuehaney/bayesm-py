@@ -1,0 +1,19 @@
+2026-02-28 10:23:55,522 - INFO - ============================================================
+2026-02-28 10:23:55,522 - INFO - rbprobitGibbs Test Suite - 2026-02-28T10:23:55.522376
+2026-02-28 10:23:55,522 - INFO - ============================================================
+2026-02-28 10:23:55,522 - INFO - Testing rbprobitGibbs_basic
+2026-02-28 10:23:55,553 - INFO - betadraw shape: (1000, 3)
+2026-02-28 10:23:55,553 - INFO - PASSED: rbprobitGibbs_basic
+2026-02-28 10:23:55,553 - INFO - Testing rbprobitGibbs_posterior
+2026-02-28 10:23:55,706 - INFO - True beta: [ 1.5 -1. ]
+2026-02-28 10:23:55,706 - INFO - Posterior mean beta: [ 1.73409479 -1.18146082]
+2026-02-28 10:23:55,706 - INFO - PASSED: rbprobitGibbs_posterior
+2026-02-28 10:23:55,706 - INFO - Testing rbprobitGibbs_thinning
+2026-02-28 10:23:55,721 - INFO - R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:23:55,721 - INFO - betadraw shape: (100, 2)
+2026-02-28 10:23:55,721 - INFO - PASSED: rbprobitGibbs_thinning
+2026-02-28 10:23:55,721 - INFO - ============================================================
+2026-02-28 10:23:55,721 - INFO - rbprobitGibbs Tests: 3/3 passed
+2026-02-28 10:23:55,721 - INFO -   rbprobitGibbs_basic: PASS
+2026-02-28 10:23:55,721 - INFO -   rbprobitGibbs_posterior: PASS
+2026-02-28 10:23:55,721 - INFO -   rbprobitGibbs_thinning: PASS

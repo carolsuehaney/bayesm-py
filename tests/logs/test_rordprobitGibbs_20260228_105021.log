@@ -1,0 +1,23 @@
+2026-02-28 10:50:21,053 - INFO - ============================================================
+2026-02-28 10:50:21,053 - INFO - rordprobitGibbs Test Suite - 2026-02-28T10:50:21.053144
+2026-02-28 10:50:21,053 - INFO - ============================================================
+2026-02-28 10:50:21,053 - INFO - Testing rordprobitGibbs_basic
+2026-02-28 10:50:21,109 - INFO - betadraw shape: (1000, 2)
+2026-02-28 10:50:21,109 - INFO - cutdraw shape: (1000, 3)
+2026-02-28 10:50:21,109 - INFO - dstardraw shape: (1000, 2)
+2026-02-28 10:50:21,109 - INFO - accept: 0.005
+2026-02-28 10:50:21,109 - INFO - PASSED: rordprobitGibbs_basic
+2026-02-28 10:50:21,109 - INFO - Testing rordprobitGibbs_posterior
+2026-02-28 10:50:21,284 - INFO - True beta: [ 1.5 -1. ]
+2026-02-28 10:50:21,284 - INFO - Posterior mean beta: [ 1.69035871 -1.18359749]
+2026-02-28 10:50:21,284 - INFO - Acceptance rate: 0.025
+2026-02-28 10:50:21,284 - INFO - PASSED: rordprobitGibbs_posterior
+2026-02-28 10:50:21,284 - INFO - Testing rordprobitGibbs_thinning
+2026-02-28 10:50:21,304 - INFO - R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:50:21,304 - INFO - betadraw shape: (100, 2)
+2026-02-28 10:50:21,304 - INFO - PASSED: rordprobitGibbs_thinning
+2026-02-28 10:50:21,304 - INFO - ============================================================
+2026-02-28 10:50:21,304 - INFO - rordprobitGibbs Tests: 3/3 passed
+2026-02-28 10:50:21,304 - INFO -   rordprobitGibbs_basic: PASS
+2026-02-28 10:50:21,304 - INFO -   rordprobitGibbs_posterior: PASS
+2026-02-28 10:50:21,304 - INFO -   rordprobitGibbs_thinning: PASS

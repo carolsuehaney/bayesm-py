@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayesm"
+version = "0.1.0"
+description = "Bayesian Inference for Marketing/Micro-Econometrics"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GPL-2.0-or-later"}
+authors = [
+    {name = "Python port based on R package by Peter Rossi et al."}
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+    "pandas>=1.3",
+    "statsmodels>=0.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+]

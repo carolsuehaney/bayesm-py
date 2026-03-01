@@ -1,0 +1,28 @@
+2026-02-28 09:55:35,740 - INFO - ============================================================
+2026-02-28 09:55:35,740 - INFO - Non-homothetic Logit Test Suite - 2026-02-28T09:55:35.740949
+2026-02-28 09:55:35,741 - INFO - ============================================================
+2026-02-28 09:55:36,306 - INFO - Testing simnhlogit
+2026-02-28 09:55:36,307 - INFO -   n=100, m=3, d=2
+2026-02-28 09:55:36,307 - INFO -   theta: [ 0.   0.5 -0.5  0.   0.   0.   1.   0.5  1. ]
+2026-02-28 09:55:36,307 - INFO -   Choice distribution: [37 41 22]
+2026-02-28 09:55:36,307 - INFO -   Prob row sums (should be 1): [1. 1. 1. 1. 1.]
+2026-02-28 09:55:36,308 - INFO -   PASSED: simnhlogit
+2026-02-28 09:55:36,308 - INFO - Testing llnhlogit
+2026-02-28 09:55:36,308 - INFO -   Log-likelihood at true theta: -108.3488
+2026-02-28 09:55:36,309 - INFO -   PASSED: llnhlogit
+2026-02-28 09:55:36,309 - INFO - Testing llnhlogit gradient (numerical)
+2026-02-28 09:55:36,310 - INFO -   Numerical gradient: [ 2.30664542 -1.20219046 -1.26731391 -1.92948182  0.98862631  0.77799999
+ -0.16281695 -0.35569791  0.54987726]
+2026-02-28 09:55:36,310 - INFO -   Gradient magnitude: 3.7594
+2026-02-28 09:55:36,310 - INFO -   PASSED: llnhlogit gradient check
+2026-02-28 09:55:36,310 - INFO - Testing likelihood maximized near true params
+2026-02-28 09:55:36,311 - INFO -   LL at true params: -209.9879
+2026-02-28 09:55:36,311 - INFO -   LL at perturbed params: -228.8929
+2026-02-28 09:55:36,311 - INFO -   Difference: 18.9049
+2026-02-28 09:55:36,311 - INFO -   PASSED: likelihood comparison
+2026-02-28 09:55:36,311 - INFO - ============================================================
+2026-02-28 09:55:36,311 - INFO - NH Logit Tests: 4/4 passed
+2026-02-28 09:55:36,311 - INFO -   simnhlogit: PASS
+2026-02-28 09:55:36,311 - INFO -   llnhlogit: PASS
+2026-02-28 09:55:36,311 - INFO -   llnhlogit_gradient: PASS
+2026-02-28 09:55:36,311 - INFO -   likelihood_comparison: PASS

@@ -1,0 +1,18 @@
+2026-02-28 10:09:46,053 - INFO - ============================================================
+2026-02-28 10:09:46,053 - INFO - runiregGibbs Test Suite - 2026-02-28T10:09:46.053402
+2026-02-28 10:09:46,053 - INFO - ============================================================
+2026-02-28 10:09:47,332 - INFO - NumExpr defaulting to 16 threads.
+2026-02-28 10:09:47,574 - INFO - Testing runiregGibbs basic functionality
+2026-02-28 10:09:47,624 - INFO -   betadraw shape: (1000, 3)
+2026-02-28 10:09:47,624 - INFO -   sigmasqdraw shape: (1000,)
+2026-02-28 10:09:47,624 - INFO -   PASSED: runiregGibbs basic
+2026-02-28 10:09:47,624 - INFO - Testing runiregGibbs posterior mean
+2026-02-28 10:09:47,883 - INFO -   True beta: [ 2. -1.]
+2026-02-28 10:09:47,883 - INFO -   Posterior mean beta: [ 1.8858396  -0.99465625]
+2026-02-28 10:09:47,883 - INFO -   True sigmasq: 1.0
+2026-02-28 10:09:47,883 - INFO -   Posterior mean sigmasq: 0.8919
+2026-02-28 10:09:47,883 - INFO -   PASSED: runiregGibbs posterior mean
+2026-02-28 10:09:47,883 - INFO - ============================================================
+2026-02-28 10:09:47,883 - INFO - runiregGibbs Tests: 2/2 passed
+2026-02-28 10:09:47,883 - INFO -   runiregGibbs_basic: PASS
+2026-02-28 10:09:47,883 - INFO -   runiregGibbs_posterior: PASS

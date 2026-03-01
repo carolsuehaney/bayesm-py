@@ -1,0 +1,41 @@
+2026-02-28 10:22:31,851 - INFO - ============================================================
+2026-02-28 10:22:31,851 - INFO - rmnlIndepMetrop Test Suite - 2026-02-28T10:22:31.851780
+2026-02-28 10:22:31,851 - INFO - ============================================================
+2026-02-28 10:22:31,851 - INFO - Testing rmnlIndepMetrop_basic
+2026-02-28 10:22:31,855 - ERROR - FAILED: rmnlIndepMetrop_basic - module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+2026-02-28 10:22:31,855 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 136, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 46, in test_rmnlIndepMetrop_basic
+    result = rmnlIndepMetrop(Data, Prior, Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rmnlIndepMetrop.py", line 133, in rmnlIndepMetrop
+    betadraw, loglike, naccept = cpp.rmnlIndepMetrop_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+
+2026-02-28 10:22:31,855 - INFO - Testing rmnlIndepMetrop_posterior
+2026-02-28 10:22:31,863 - ERROR - FAILED: rmnlIndepMetrop_posterior - module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+2026-02-28 10:22:31,863 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 136, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 83, in test_rmnlIndepMetrop_posterior
+    result = rmnlIndepMetrop(Data, Prior, Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rmnlIndepMetrop.py", line 133, in rmnlIndepMetrop
+    betadraw, loglike, naccept = cpp.rmnlIndepMetrop_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+
+2026-02-28 10:22:31,863 - INFO - Testing rmnlIndepMetrop_thinning
+2026-02-28 10:22:31,864 - ERROR - FAILED: rmnlIndepMetrop_thinning - module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+2026-02-28 10:22:31,864 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 136, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rmnlIndepMetrop.py", line 111, in test_rmnlIndepMetrop_thinning
+    result = rmnlIndepMetrop(Data, Mcmc=Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rmnlIndepMetrop.py", line 133, in rmnlIndepMetrop
+    betadraw, loglike, naccept = cpp.rmnlIndepMetrop_rcpp_loop(
+AttributeError: module '_bayesm_cpp' has no attribute 'rmnlIndepMetrop_rcpp_loop'
+
+2026-02-28 10:22:31,864 - INFO - ============================================================
+2026-02-28 10:22:31,864 - INFO - rmnlIndepMetrop Tests: 0/3 passed
+2026-02-28 10:22:31,864 - INFO -   rmnlIndepMetrop_basic: FAIL
+2026-02-28 10:22:31,864 - INFO -   rmnlIndepMetrop_posterior: FAIL
+2026-02-28 10:22:31,864 - INFO -   rmnlIndepMetrop_thinning: FAIL

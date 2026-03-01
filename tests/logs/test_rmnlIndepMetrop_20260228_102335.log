@@ -1,0 +1,22 @@
+2026-02-28 10:23:35,675 - INFO - ============================================================
+2026-02-28 10:23:35,675 - INFO - rmnlIndepMetrop Test Suite - 2026-02-28T10:23:35.675355
+2026-02-28 10:23:35,675 - INFO - ============================================================
+2026-02-28 10:23:35,675 - INFO - Testing rmnlIndepMetrop_basic
+2026-02-28 10:23:35,682 - INFO - betadraw shape: (500, 4)
+2026-02-28 10:23:35,682 - INFO - loglike shape: (500,)
+2026-02-28 10:23:35,682 - INFO - acceptance rate: 0.798
+2026-02-28 10:23:35,682 - INFO - PASSED: rmnlIndepMetrop_basic
+2026-02-28 10:23:35,682 - INFO - Testing rmnlIndepMetrop_posterior
+2026-02-28 10:23:35,726 - INFO - True beta: [ 2. -1.]
+2026-02-28 10:23:35,726 - INFO - Posterior mean beta: [ 1.81033705 -0.95167496]
+2026-02-28 10:23:35,726 - INFO - Acceptance rate: 0.877
+2026-02-28 10:23:35,726 - INFO - PASSED: rmnlIndepMetrop_posterior
+2026-02-28 10:23:35,726 - INFO - Testing rmnlIndepMetrop_thinning
+2026-02-28 10:23:35,730 - INFO - R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:23:35,730 - INFO - betadraw shape: (100, 2)
+2026-02-28 10:23:35,730 - INFO - PASSED: rmnlIndepMetrop_thinning
+2026-02-28 10:23:35,730 - INFO - ============================================================
+2026-02-28 10:23:35,730 - INFO - rmnlIndepMetrop Tests: 3/3 passed
+2026-02-28 10:23:35,730 - INFO -   rmnlIndepMetrop_basic: PASS
+2026-02-28 10:23:35,730 - INFO -   rmnlIndepMetrop_posterior: PASS
+2026-02-28 10:23:35,730 - INFO -   rmnlIndepMetrop_thinning: PASS

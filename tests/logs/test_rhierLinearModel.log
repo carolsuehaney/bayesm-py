@@ -1,0 +1,44 @@
+2026-02-28 10:09:52,553 - INFO - ============================================================
+2026-02-28 10:09:52,553 - INFO - rhierLinearModel Test Suite - 2026-02-28T10:09:52.553493
+2026-02-28 10:09:52,553 - INFO - ============================================================
+2026-02-28 10:09:53,469 - INFO - NumExpr defaulting to 16 threads.
+2026-02-28 10:09:53,653 - INFO - Testing rhierLinearModel basic functionality
+2026-02-28 10:09:54,235 - INFO -   betadraw shape: (20, 3, 500)
+2026-02-28 10:09:54,236 - INFO -   taudraw shape: (500, 20)
+2026-02-28 10:09:54,236 - INFO -   Deltadraw shape: (500, 3)
+2026-02-28 10:09:54,236 - INFO -   Vbetadraw shape: (500, 9)
+2026-02-28 10:09:54,236 - INFO -   PASSED: rhierLinearModel basic
+2026-02-28 10:09:54,236 - INFO - Testing rhierLinearModel with Z covariates
+2026-02-28 10:09:55,970 - INFO -   True Delta:
+[[ 1.  -0.5]
+ [ 0.5  0.3]]
+2026-02-28 10:09:55,970 - INFO -   Posterior mean Delta:
+[[ 0.94162266  0.54597414]
+ [-0.55146614  0.15583196]]
+2026-02-28 10:09:55,970 - INFO -   PASSED: rhierLinearModel with Z
+2026-02-28 10:09:55,970 - INFO - ============================================================
+2026-02-28 10:09:55,970 - INFO - rhierLinearModel Tests: 2/2 passed
+2026-02-28 10:09:55,970 - INFO -   rhierLinearModel_basic: PASS
+2026-02-28 10:09:55,970 - INFO -   rhierLinearModel_with_Z: PASS
+2026-02-28 14:18:11,203 - INFO - ============================================================
+2026-02-28 14:18:11,203 - INFO - rhierLinearModel Test Suite - 2026-02-28T14:18:11.203933
+2026-02-28 14:18:11,204 - INFO - ============================================================
+2026-02-28 14:18:12,199 - INFO - NumExpr defaulting to 16 threads.
+2026-02-28 14:18:12,405 - INFO - Testing rhierLinearModel basic functionality
+2026-02-28 14:18:13,013 - INFO -   betadraw shape: (20, 3, 500)
+2026-02-28 14:18:13,013 - INFO -   taudraw shape: (500, 20)
+2026-02-28 14:18:13,013 - INFO -   Deltadraw shape: (500, 3)
+2026-02-28 14:18:13,014 - INFO -   Vbetadraw shape: (500, 9)
+2026-02-28 14:18:13,014 - INFO -   PASSED: rhierLinearModel basic
+2026-02-28 14:18:13,014 - INFO - Testing rhierLinearModel with Z covariates
+2026-02-28 14:18:14,831 - INFO -   True Delta:
+[[ 1.  -0.5]
+ [ 0.5  0.3]]
+2026-02-28 14:18:14,831 - INFO -   Posterior mean Delta:
+[[ 0.94080848  0.55957516]
+ [-0.52292394  0.10363497]]
+2026-02-28 14:18:14,831 - INFO -   PASSED: rhierLinearModel with Z
+2026-02-28 14:18:14,831 - INFO - ============================================================
+2026-02-28 14:18:14,831 - INFO - rhierLinearModel Tests: 2/2 passed
+2026-02-28 14:18:14,831 - INFO -   rhierLinearModel_basic: PASS
+2026-02-28 14:18:14,831 - INFO -   rhierLinearModel_with_Z: PASS

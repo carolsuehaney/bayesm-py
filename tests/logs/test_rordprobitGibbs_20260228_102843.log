@@ -1,0 +1,38 @@
+2026-02-28 10:28:43,528 - INFO - ============================================================
+2026-02-28 10:28:43,528 - INFO - rordprobitGibbs Test Suite - 2026-02-28T10:28:43.528754
+2026-02-28 10:28:43,528 - INFO - ============================================================
+2026-02-28 10:28:43,528 - INFO - Testing rordprobitGibbs_basic
+2026-02-28 10:28:43,529 - ERROR - FAILED: rordprobitGibbs_basic - some value of y is not valid
+2026-02-28 10:28:43,529 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rordprobitGibbs.py", line 134, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rordprobitGibbs.py", line 44, in test_rordprobitGibbs_basic
+    result = rordprobitGibbs(Data, Prior, Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rordprobitGibbs.py", line 89, in rordprobitGibbs
+    pandterm("some value of y is not valid")
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/utilities.py", line 16, in pandterm
+    raise ValueError(message)
+ValueError: some value of y is not valid
+
+2026-02-28 10:28:43,529 - INFO - Testing rordprobitGibbs_posterior
+2026-02-28 10:28:43,529 - ERROR - FAILED: rordprobitGibbs_posterior - some value of y is not valid
+2026-02-28 10:28:43,529 - ERROR - Traceback (most recent call last):
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rordprobitGibbs.py", line 134, in main
+    results[name] = test_func()
+  File "/Users/carolh/code/python_code/py_peter/tests/test_rordprobitGibbs.py", line 81, in test_rordprobitGibbs_posterior
+    result = rordprobitGibbs(Data, Mcmc=Mcmc)
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/rordprobitGibbs.py", line 89, in rordprobitGibbs
+    pandterm("some value of y is not valid")
+  File "/Users/carolh/code/python_code/py_peter/tests/../python/bayesm/utilities.py", line 16, in pandterm
+    raise ValueError(message)
+ValueError: some value of y is not valid
+
+2026-02-28 10:28:43,529 - INFO - Testing rordprobitGibbs_thinning
+2026-02-28 10:28:43,549 - INFO - R=1000, keep=10 -> expected 100 draws
+2026-02-28 10:28:43,549 - INFO - betadraw shape: (100, 2)
+2026-02-28 10:28:43,549 - INFO - PASSED: rordprobitGibbs_thinning
+2026-02-28 10:28:43,549 - INFO - ============================================================
+2026-02-28 10:28:43,549 - INFO - rordprobitGibbs Tests: 1/3 passed
+2026-02-28 10:28:43,549 - INFO -   rordprobitGibbs_basic: FAIL
+2026-02-28 10:28:43,549 - INFO -   rordprobitGibbs_posterior: FAIL
+2026-02-28 10:28:43,549 - INFO -   rordprobitGibbs_thinning: PASS
